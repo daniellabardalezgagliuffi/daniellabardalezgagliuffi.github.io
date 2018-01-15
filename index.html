@@ -573,6 +573,126 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Portfolio -->
 
+<div id="projects" class="portfolio">
+    <div class="container">
+        <h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">My Projects</h3>
+        <div class="sap_tabs">
+            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                <ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+                    <li class="resp-tab-item"><span>What is an Arrhythmia?</span></li>
+                    <li class="resp-tab-item"><span>What Perpetuates Fibrillation?</span></li>
+                    <li class="resp-tab-item"><span>How Can We Utilize Patient Data?</span></li>
+                    <li class="resp-tab-item"><span>Why do Arrhythmias Terminate?</span></li>
+                </ul>
+                <div class="clearfix"> </div>
+                <div class="resp-tabs-container">
+                    <div class="tab-1 resp-tab-content">
+                        <div class="col-md-6">
+                            <p style="font-size: 1.2em;color: #999;"> During a normal human heartbeat, an
+                            electrical wave of excitation spreads out evenly across cardiac tissue.  This electrical
+                            signal causes contraction of the heart muscle, resulting in the pumping of blood throughout the body.
+                            If this electrical wave becomes mangled, the resulting contraction can become substantially altered,
+                            leading to an arrhythmia. The most serious type of arrhythmia, known as fibrillation, arises when the heart's
+                            contraction becomes entirely uncoordinated and ineffective, with its motion reduced to chaotic quivering.  My research
+                            focuses on understanding the complex dynamical state underlying human fibrillation by
+                            exploring the relationship between theoretical principles, computational simulations, and clinical data. </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="position: absolute; top:0px; left:0px; width:250px; height:25px; text-align: center; color: #999">Normal Conduction</div>
+                            <div style="position: absolute; top:0px; left:250px; width:250px; height:25px; text-align: center; color: #999">Arrhythmic Conduction</div>
+                            <img src="images/NSR.gif" style="width:250px;height:250px;padding: 25px 0 0 0">
+                                <img src="images/fib.gif" style="width:250px;height:250px;padding: 25px 0 0 0">
+                                    <p style="text-align: center; color: #999;"><i>Images by wikipedia user JHeuser, distributed under
+                                        <a title="Creative Commons Attribution-Share Alike 3.0" href="http://creativecommons.org/licenses/by-sa/3.0/">
+                                            CC BY-SA 3.0</i></a></p>
+                                    </div>
+                    </div>
+                    <div class="tab-1 resp-tab-content">
+                        <div class="col-md-8">
+                            <p style="font-size: 1.2em;color: #999;">
+                            Though fibrillation in humans can exist indefinitely, it is most commonly
+                            seen in episodes which last from minutes to days, eventually terminating back to normal sinus rhythm.
+                            An obvious question arises: what is the mechanism allowing for the chaos inherent to fibrillation to persist
+                            for extended periods of time?  Put another way, what exactly is perpuating this arrhythmia and how can we stop it?
+                            </p>
+                            <br style="margin-bottom: 2px;"/>
+                            <p style="font-size: 1.2em;color: #999;">
+                            Recent findings point to the importance of consistent rotational patterns of conduction as playing
+                            an important role in the maintanence of this arrhythmia.  These rotational patterns are grounded in extensive theoretical and
+                            computational studies of the heart and are hypothesized to act
+                            as the drivers of disorganization.  A sample simulation of this hypothesis is shown to the right,
+                            where a central rotational pattern exists with wavefronts breaking up far from the core.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <center><img src="images/RotorMWR.gif" style="width:270px;height:270px;"></center>
+                            <p style="text-align: center; color: #999;"> <i>Simulation of rotational pattern surrounded by breakup, red is excited tissue
+                                and blue is resting tissue. </i></p>
+                        </div>
+                    </div>
+                    <div class="tab-1 resp-tab-content">
+                        <div class="col-md-8">
+                            <p style="font-size: 1.2em;color: #999;">
+                            To better understand the role that various conduction patterns play in human fibrillation,
+                            it becomes necessary to collect and analyze clinical data from patients.  This is achieved through use of a basket catheter,
+                            which records electrical signals at various points on the surface of the heart during an episode of arrhythmia.  These signals
+                            are then processed and used to create patient-specific videos of the underyling electrical activity.
+                            </p>
+                            
+                            <br style="margin-bottom: 2px;"/>
+                            <p style="font-size: 1.2em;color: #999;">
+                            One focus of my work was to design and implement a methodology to make the interpretation of these complex
+                            activation videos easier for physicians and scientists, as well as providing quantiative measures of any conduction patterns present.
+                            To do so, we designed a novel algorithm which accurately identifies and visualizes the vector flow field of electrical activity in these videos.  This is outlined
+                            in our publiction "Determing Conduction Patterns on a Sparse Electrode Grid" (see below) as well as
+                            in our patent application WO2017165846A1.  With this tool we can conduct systematic studies on the dynamical evolution of arrhythmia episodes.
+                            
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <video width="350" height="350" controls="controls">
+                                <source src="images/WFFclip.mp4" type="video/mp4">
+                                    </video>
+                            <p style="text-align: center; color: #999;"> <i> Activation video during clinical fibrillation, with the
+                                computed flow field in green and activation in white.  Reproduced from Vidmar et al (2016), Physical Review E. Copyright APS. </i></p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-1 resp-tab-content">
+                        <div class="col-md-6">
+                            <p style="font-size: 1.2em;color: #999;"> COMING SOON. </p>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--ResponsiveTabs-->
+        <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                              $('#horizontalTab').easyResponsiveTabs({
+                                                                     type: 'default', //Types: default, vertical, accordion
+                                                                     width: 'auto', //auto or any width like 600px
+                                                                     fit: true   // 100% fit in a container
+                                                                     });
+                              });
+            </script>
+        <!--//ResponsiveTabs-->
+        <!-- swipe box js -->
+        <script src="js/jquery.swipebox.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) {
+                   $(".swipebox").swipebox();
+                   });
+            </script>
+        <!-- //swipe box js -->
+    </div>
+</div>
+<!--//portfolio-->
+
 
 <!-- /education -->
  <div class="education" id="education">
