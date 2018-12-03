@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
 
 /*
 	Prologue by HTML5 UP
@@ -1556,7 +1557,7 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color:  #383838;
 	}
 
 		body.is-loading * {
@@ -1710,12 +1711,13 @@
 			width: 48px;
 			height: 48px;
 			background: #f00;
-
+			overflow: hidden;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 80px;
+				height: 60px;
+				margin: -5px 0 0 -8px;
 			}
 
 		.image.fit {
@@ -1975,6 +1977,17 @@
 
 /* Header */
 
+	#search {
+		margin: auto;
+	  padding: 20px;
+		width: 90%;
+	  background: rgb(34,34,34); /* for IE */
+	  background: rgba(34,34,34,0.75);
+	}
+
+	#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal;}
+	#search h5 { font-style:italic; font-size:25px;}
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2165,6 +2178,8 @@
 				#main > section.dark strong {
 					color: #fff;
 					border-color: inherit;
+					font-size:50px;
+					font-weight:bold;
 				}
 
 				#main > section.dark a {
@@ -2582,6 +2597,17 @@
 	text-decoration: none;
 	border-bottom: none;
 }
+.outreach {
+	height: 300px;
+	width: 500px;
+	object-fit: cover;
+	margin-left: 0;
+	padding-right: 0px;
+}
+.outreach a {
+	text-decoration: none;
+	border-bottom: none;
+}
 .narrow-column {
 	width: 30%;
 	margin-right: 20px;
@@ -2598,4 +2624,42 @@
 	justify-content: space-between;
 	align-items: center;
 	overflow: visible;
+}
+
+/* Tabs*/
+section {
+    padding: 20px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#tabs{
+	background: #505050;
+  color: #eee;
+	border-radius: 4px;
+}
+
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
 }

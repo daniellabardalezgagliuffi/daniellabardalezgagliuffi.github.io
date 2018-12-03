@@ -13,6 +13,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -23,32 +26,18 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 			<!-- Logo -->
 			<div id="logo">
-				<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-				<h1 id="title">Daniella C. Bardalez Gagliuffi</h1>
+				<span class="image avatar48"><img src="images/IMG_2907.jpeg" alt="" /></span>
+				<h1 id="title">Daniella C. <br /> Bardalez Gagliuffi</h1>
 				<p>Astrophysicist</p>
 			</div>
 
 			<!-- Nav -->
 			<nav id="nav">
-				<!--
-
-				Prologue's nav expects links in one of two formats:
-
-				1. Hash link (scrolls to a different section within the page)
-
-				<li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-				2. Standard link (sends the user to another page/site)
-
-				<li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-			-->
 			<ul>
 				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-				<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Research</span></a></li>
-				<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Outreach</span></a></li>
+				<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">Research</span></a></li>
+				<li><a href="#outreach" id="outreach-link" class="skel-layers-ignoreHref"><span class="icon fa-bullhorn">Outreach</span></a></li>
 				<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-				<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 			</ul>
 		</nav>
 
@@ -58,9 +47,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 		<!-- Social Icons -->
 		<ul class="icons">
-			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="mailto:dbardalezgagliuffi@amnh.org" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="https://www.linkedin.com/in/daniella-c-bardalez-gagliuffi-phd-16593850/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://twitter.com/astro_daniella?lang=en" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://github.com/daniellabardalezgagliuffi" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 		</ul>
 
 	</div>
@@ -75,10 +65,12 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<div class="container">
 
 			<header>
-				<h2 class="alt"><strong>Daniella C. Bardalez Gagliuffi</strong></h2>
-				<p>Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History<br />
-					investigating brown dwarfs and binary systems.</p>
-				</header>
+				  <div id="search">
+				    <h2 class="alt"><strong>Daniella C. Bardalez Gagliuffi</strong></h2>
+				    <h5>Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History<br />
+							investigating brown dwarfs and binary systems.</h5>
+				  </div>
+			</header>
 
 				<!-- 							<footer>
 				<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
@@ -92,67 +84,79 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<div class="container">
 
 			<header>
-				<h2>Research</h2>
+				<h2 style="font-size:2.5em;">Research</h2>
 			</header>
 
 			<p>My research focuses on the study of brown dwarfs, their atmospheres and near-infrared spectra, and their multiplicity properties to understand how they form. </p>
 
-			<div class="row">
-				<div class="">
-					<article class="item">
-						<div>
-							<a href="#" class="image fit"><img src="images/mollweide_objectmap_bf1sig.jpg" alt="" /></a>
-							<header>
-								<h3>25pc Sample of M7-L5 Dwarfs</h3>
-							</header>
+			<!-- Tabs -->
+			<section id="tabs">
+				<div class="container" style="width:95%;">
+					<div class="row">
+						<div class="col-xs-12 ">
+							<nav>
+								<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">25pc Sample</a>
+									<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Another Sample</a>
+									<a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">A Third Sample</a>
+								</div>
+							</nav>
+							<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+									<article class="item">
+											<a href="#" class="image fit"><img src="images/mollweide_objectmap_bf1sig.jpg" alt="" /></a>
+											<header>
+												<h3>25pc Sample of M7-L5 Dwarfs</h3>
+											</header>
+									</article>
+								</div>
+								<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<article class="item">
+											<a href="#" class="image fit"><img src="images/mollweide_objectmap_bf1sig.jpg" alt="" /></a>
+											<header>
+												<h3>25pc Sample of M7-L5 Dwarfs</h3>
+											</header>
+									</article>
+								</div>
+								<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+									<article class="item">
+											<a href="#" class="image fit"><img src="images/mollweide_objectmap_bf1sig.jpg" alt="" /></a>
+											<header>
+												<h3>25pc Sample of M7-L5 Dwarfs</h3>
+											</header>
+									</article>
+								</div>
+							</div>
+
 						</div>
-						<p>I have compiled the most complete volume-limited sample to date of literature M7-L5 dwarfs in the 25pc volume around the Sun. Here are some statistics about your local neighbourhood:
-							- There are 408 M7-L5 dwarfs within 25pc for a density of (6.92±0.40)x10^-3 pc^-3.
-							- 93% have parallaxes (80% of those from Gaia DR2)
-							- We have obtained SpeX spectra for 88% of the Sample</p>
-					</article>
-
+					</div>
 				</div>
-			</div>
-
+			</section>
 		</div>
 	</section>
 
-	<!-- Portfolio -->
-	<section id="portfolio" class="two">
+	<!-- Outreach -->
+	<section id="outreach" class="three">
 		<div class="container">
 
 			<header>
-				<h2>Outreach</h2>
+				<h2 style="font-size:2.5em;">Outreach</h2>
 			</header>
-
-			<p>Being an observational astronomer means that I get to observe what the universe does without modifying it. The universe gives me hints to piece together its functioning.</p>
-
-			<div class="row">
-				<div class="">
-					<article class="item">
-						<div>
-							<a href="#" class="image fit"><img src="images/mollweide_objectmap_bf1sig.jpg" alt="" /></a>
-							<header>
-								<h3>25pc Sample of M7-L5 Dwarfs</h3>
-							</header>
-						</div>
-						<p>My research focuses on the study of brown dwarfs, their atmospheres and near-infrared spectra, and their multiplicity properties to understand how they form.</p>
-					</article>
-
-				</div>
-			</div>
-
+					<p> <img src="images/outreach.jpg" alt="" class="outreach" style="float:right; margin-left:20px;"/>
+						Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History
+							investigating brown dwarfs and binary systems.Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History
+							investigating brown dwarfs and binary systems.Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History
+								investigating brown dwarfs and binary systems.Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History
+											investigating brown dwarfs and binary systems. </p>
 		</div>
 	</section>
-
 
 	<!-- About Me -->
 	<section id="about" class="three">
 		<div class="container">
 
 			<header>
-				<h2>About Me</h2>
+				<h2 style="font-size:2.5em;">About Me</h2>
 			</header>
 
 			<div class="about row">
@@ -160,43 +164,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					<img src="images/IMG_2907.jpeg" alt="" class="profile"/>
 				</section>
 				<section class="wide-column">
-					<p>I am an observational astronomer originally from Lima, Peru.
-						I received my PhD in 2017 from the University of California at San Diego, and my Bachelor in Science in Physics from MIT.
-						I enjoy cooking (and eating), traveling, playing the guitar, doing yoga, and knitting.
-						I speak Spanish, English, French, and Python.</p>
+					<p>I am an observational astronomer, originally from Lima, Peru. I earned my Bachelor's in Physics at MIT and my PhD at UC San Diego. I enjoy cooking (and eating), traveling, playing the guitar and knitting. I speak Spanish, English, un peu de Français, and Python.</p>
 				</section>
 			</div>
 		</div>
 	</section>
-
-	<!-- Contact
-	<section id="contact" class="four">
-	<div class="container">
-
-	<header>
-	<h2>Contact</h2>
-</header>
-
-<p>Elementum sem parturient nulla quam placerat viverra
-mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-<form method="post" action="#">
-<div class="row">
-<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-<div class="12u$">
-<textarea name="message" placeholder="Message"></textarea>
-</div>
-<div class="12u$">
-<input type="submit" value="Send Message" />
-</div>
-</div>
-</form>
-
-</div>
-</section>-->
 
 </div>
 
@@ -205,7 +177,7 @@ orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
 
 	<!-- Copyright -->
 	<ul class="copyright">
-		<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		<li>&copy; Daniella Bardalez Gagliuffi. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	</ul>
 
 </div>
